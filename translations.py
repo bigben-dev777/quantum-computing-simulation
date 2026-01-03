@@ -81,9 +81,7 @@ When measured, a qubit **collapses** to one of the basis states (|0⟩ or |1⟩)
         "measurement_result_label": "Measurement Result",
         "frequency_label": "Frequency (from {shots} shots)",
         "histogram_title": "Measurement Histogram ({shots} Shots)",
-        
-        # Footer
-        "footer": "⚛️ Created with Rasidi using Streamlit & NumPy | Quantum Computing Simulator v1.0",
+
         
         # Gate descriptions
         "gate_hadamard_desc": "Creates superposition: transforms |0⟩ → (|0⟩ + |1⟩)/√2 and |1⟩ → (|0⟩ - |1⟩)/√2",
@@ -176,8 +174,6 @@ Saat diukur, qubit **collapse** ke salah satu basis state (|0⟩ atau |1⟩) den
         "frequency_label": "Frekuensi (dari {shots} shots)",
         "histogram_title": "Histogram Pengukuran ({shots} Shots)",
         
-        # Footer
-        "footer": "⚛️ Dibuat dengan Rasidi menggunakan Streamlit & NumPy | Quantum Computing Simulator v1.0",
         
         # Gate descriptions
         "gate_hadamard_desc": "Menciptakan superposisi: mengubah |0⟩ → (|0⟩ + |1⟩)/√2 dan |1⟩ → (|0⟩ - |1⟩)/√2",
@@ -270,8 +266,6 @@ Al medirse, un qubit **colapsa** a uno de los estados base (|0⟩ o |1⟩) con p
         "frequency_label": "Frecuencia (de {shots} disparos)",
         "histogram_title": "Histograma de Medición ({shots} Disparos)",
         
-        # Footer
-        "footer": "⚛️ Creado con Rasidi usando Streamlit & NumPy | Quantum Computing Simulator v1.0",
         
         # Gate descriptions
         "gate_hadamard_desc": "Crea superposición: transforma |0⟩ → (|0⟩ + |1⟩)/√2 y |1⟩ → (|0⟩ - |1⟩)/√2",
@@ -284,104 +278,10 @@ Al medirse, un qubit **colapsa** a uno de los estados base (|0⟩ o |1⟩) con p
         # Language selector
         "language_label": "🌐 Idioma:",
     },
-    
-    "中文": {
-        "lang_code": "zh",
-        "flag": "🇨🇳",
-        
-        # Page config
-        "page_title": "量子计算模拟",
-        
-        # Main title
-        "main_title": " 交互式量子计算模拟",
-        
-        # Introduction section
-        "intro_header": "ℹ️ 什么是量子计算？",
-        "intro_title": "### ⚛️ 量子计算简介",
-        "intro_content": """
-**量子计算**是一种利用量子力学现象如**叠加**和**纠缠**的计算范式。
-
-#### 🔹 量子比特（Qubit）
-与经典比特（0或1）不同，**量子比特**可以处于两种状态的**叠加**：
-- |ψ⟩ = α|0⟩ + β|1⟩
-- |α|² + |β|² = 1（归一化）
-
-#### 🔹 量子门
-**量子门**是操控量子比特状态的操作，类似于经典逻辑门，但具有**可逆性**和**幺正性**。
-
-#### 🔹 测量
-测量时，量子比特会**坍缩**到基态（|0⟩ 或 |1⟩）之一，概率分别为|α|² 和 |β|²。
-""",
-        
-        # Sidebar
-        "sidebar_settings": "⚙️ 模拟设置",
-        "num_qubits_label": "量子比特数量：",
-        "num_qubits_help": "选择量子系统的量子比特数量（1-3个量子比特）",
-        "add_gate_header": "🎛️ 添加量子门",
-        "select_gate": "选择门：",
-        "select_gate_help": "选择要应用的量子门",
-        "target_qubit": "目标量子比特：",
-        "target_qubit_help": "将接收门操作的量子比特",
-        "apply_gate_btn": "➕ 应用门",
-        "gate_applied_success": "✅ {gate_name} 已应用于 Q{target}",
-        
-        # CNOT section
-        "cnot_header": "🔗 CNOT门（2量子比特）",
-        "control_label": "控制：",
-        "target_label": "目标：",
-        "cnot_info": "🔗 **CNOT**：当控制量子比特 = |1⟩ 时翻转目标量子比特",
-        "apply_cnot_btn": "➕ 应用CNOT",
-        "cnot_applied_success": "✅ CNOT已应用（控制：Q{control}，目标：Q{target}）",
-        
-        # Reset
-        "reset_btn": "🔄 重置系统",
-        "reset_warning": "⚠️ 系统已重置为 |0...0⟩",
-        
-        # Main area
-        "state_vector_header": " 状态向量可视化",
-        "save_state_vector_btn": "💾 保存状态向量图",
-        "measurement_header": " 测量模拟",
-        "shots_label": "测量次数：",
-        "save_measurement_btn": "💾 保存测量直方图",
-        
-        # State info
-        "state_info_header": " 状态信息",
-        "current_state": "#### 📍 当前状态：",
-        "circuit_history": "#### 🔧 电路历史：",
-        "no_gates_applied": "尚未应用任何门",
-        "show_matrix": "📐 显示门矩阵",
-        "matrix_title": "矩阵",
-        
-        # Plot labels
-        "basis_state_label": "基态 |x⟩",
-        "probability_label": "概率 P(x)",
-        "probability_dist_title": "📊 测量概率分布",
-        "amplitude_label": "振幅",
-        "amplitude_title": "🌊 复数振幅状态向量",
-        "real_label": "实部",
-        "imaginary_label": "虚部",
-        "measurement_result_label": "测量结果",
-        "frequency_label": "频率（共{shots}次测量）",
-        "histogram_title": "测量直方图（{shots}次测量）",
-        
-        # Footer
-        "footer": "⚛️ 由Rasidi使用Streamlit和NumPy创建 | 量子计算模拟器 v1.0",
-        
-        # Gate descriptions
-        "gate_hadamard_desc": "创建叠加：将 |0⟩ → (|0⟩ + |1⟩)/√2 和 |1⟩ → (|0⟩ - |1⟩)/√2",
-        "gate_pauli_x_desc": "比特翻转：交换 |0⟩ ↔ |1⟩（类似经典NOT门）",
-        "gate_pauli_y_desc": "在布洛赫球Y轴上旋转π弧度",
-        "gate_pauli_z_desc": "相位翻转：将 |1⟩ 的相位变为 -|1⟩",
-        "gate_s_desc": "相位偏移π/2：为 |1⟩ 添加相位i",
-        "gate_t_desc": "相位偏移π/4：对通用计算很重要",
-        
-        # Language selector
-        "language_label": "🌐 语言：",
-    }
 }
 
 # Available languages for the selector
-AVAILABLE_LANGUAGES = ["English", "Indonesia", "Español", "中文"]
+AVAILABLE_LANGUAGES = ["English", "Indonesia", "Español",]
 
 def get_text(lang, key, **kwargs):
     """
