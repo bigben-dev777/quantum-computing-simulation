@@ -304,16 +304,17 @@ def get_text(lang, key, **kwargs):
 
 def get_gate_description(lang, gate_name):
     """Get translated gate description"""
-    gate_desc_map = {
-        "Hadamard (H)": "gate_hadamard_desc",
-        "Pauli-X": "gate_pauli_x_desc",
-        "Pauli-Y": "gate_pauli_y_desc",
-        "Pauli-Z": "gate_pauli_z_desc",
-        "S Gate": "gate_s_desc",
-        "T Gate": "gate_t_desc",
-    }
+    # gate_desc_map = {
+    #     "Hadamard (H)": "gate_hadamard_desc",
+    #     "Pauli-X": "gate_pauli_x_desc",
+    #     "Pauli-Y": "gate_pauli_y_desc",
+    #     "Pauli-Z": "gate_pauli_z_desc",
+    #     "S Gate": "gate_s_desc",
+    #     "T Gate": "gate_t_desc",
+    # }
     
-    key = gate_desc_map.get(gate_name, "")
-    if key:
-        return get_text(lang, key)
-    return ""
+    # key = gate_desc_map.get(gate_name, "")
+    # if key:
+    #     return get_text(lang, key)
+    # return ""
+    ...
