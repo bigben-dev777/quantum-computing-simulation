@@ -267,13 +267,13 @@ Al medirse, un qubit **colapsa** a uno de los estados base (|0⟩ o |1⟩) con p
         "histogram_title": "Histograma de Medición ({shots} Disparos)",
         
         
-        # # Gate descriptions
-        # "gate_hadamard_desc": "Crea superposición: transforma |0⟩ → (|0⟩ + |1⟩)/√2 y |1⟩ → (|0⟩ - |1⟩)/√2",
-        # "gate_pauli_x_desc": "Inversión de bit: intercambia |0⟩ ↔ |1⟩ (como puerta NOT clásica)",
-        # "gate_pauli_y_desc": "Rotación de π radianes en el eje Y de la esfera de Bloch",
-        # "gate_pauli_z_desc": "Inversión de fase: cambia la fase de |1⟩ a -|1⟩",
-        # "gate_s_desc": "Desplazamiento de fase π/2: añade fase i a |1⟩",
-        # "gate_t_desc": "Desplazamiento de fase π/4: importante para computación universal",
+        # Gate descriptions
+        "gate_hadamard_desc": "Crea superposición: transforma |0⟩ → (|0⟩ + |1⟩)/√2 y |1⟩ → (|0⟩ - |1⟩)/√2",
+        "gate_pauli_x_desc": "Inversión de bit: intercambia |0⟩ ↔ |1⟩ (como puerta NOT clásica)",
+        "gate_pauli_y_desc": "Rotación de π radianes en el eje Y de la esfera de Bloch",
+        "gate_pauli_z_desc": "Inversión de fase: cambia la fase de |1⟩ a -|1⟩",
+        "gate_s_desc": "Desplazamiento de fase π/2: añade fase i a |1⟩",
+        "gate_t_desc": "Desplazamiento de fase π/4: importante para computación universal",
         
         # Language selector
         "language_label": "🌐 Idioma:",
@@ -304,16 +304,16 @@ def get_text(lang, key, **kwargs):
 
 def get_gate_description(lang, gate_name):
     """Get translated gate description"""
-    # gate_desc_map = {
-    #     "Hadamard (H)": "gate_hadamard_desc",
-    #     "Pauli-X": "gate_pauli_x_desc",
-    #     "Pauli-Y": "gate_pauli_y_desc",
-    #     "Pauli-Z": "gate_pauli_z_desc",
-    #     "S Gate": "gate_s_desc",
-    #     "T Gate": "gate_t_desc",
-    # }
+    gate_desc_map = {
+        "Hadamard (H)": "gate_hadamard_desc",
+        "Pauli-X": "gate_pauli_x_desc",
+        "Pauli-Y": "gate_pauli_y_desc",
+        "Pauli-Z": "gate_pauli_z_desc",
+        "S Gate": "gate_s_desc",
+        "T Gate": "gate_t_desc",
+    }
     
-    # key = gate_desc_map.get(gate_name, "")
-    # if key:
-    #     return get_text(lang, key)
-    # return ""
+    key = gate_desc_map.get(gate_name, "")
+    if key:
+        return get_text(lang, key)
+    return ""
