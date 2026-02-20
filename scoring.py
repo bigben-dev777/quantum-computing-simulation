@@ -23,8 +23,7 @@ def reward(y_pred: np.ndarray, y_true: np.ndarray) -> tuple[float, dict]:
 
     res = {
         "fp_score": 1 - fp / max(len(y_pred), 1),
-        "f1_score": f1,
-        "ap_score": ap_score,
+        "f1_score": f1
     }
     rew = sum(res.values()) / len(res)
     return rew, res
