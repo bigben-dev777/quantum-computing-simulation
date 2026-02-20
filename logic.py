@@ -6,7 +6,6 @@ import io
 
 # Import translations
 from translations import TRANSLATIONS, AVAILABLE_LANGUAGES, get_text, get_gate_description
-
 # Initialize language in session state before page config
 if 'language' not in st.session_state:
     st.session_state.language = "English"
@@ -250,9 +249,8 @@ def display_matrix(matrix, title, lang):
 
 
 def main():
-    # Get current language
-    lang = st.session_state.language
-    
+    # Get current language]
+   
     # Get translated gate info
     GATE_INFO = get_gate_info(lang)
     
